@@ -1,0 +1,161 @@
+<html>
+
+<head>
+    <title>bULL</title>
+    <link rel="icon" type="image/ico" href="1.ico" sizes="40x40">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <script src="https://use.fontawesome.com/13071909f2.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+	<link type="text/css" rel="stylesheet" href="css/d.css">
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="js/d.js"></script>
+	<style>
+   @font-face {
+    font-family: Pacifico;
+    src: url(https://fonts.googleapis.com/css?family=Pacifico);
+   }
+   h1 {
+    font-family: 'Pacifico', cursive;
+   }
+  </style>
+	<style>
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+</style>
+    <link rel="stylesheet" href="css/animate.css">
+
+
+</head>
+
+<body class="loading">
+    <div id="wrapper">
+	  <body background="scr/1.jpg"></body>
+        <div id="overlay"></div>
+        <div id="main">
+            <header id="header">
+                <span id="doc_time">Time</span>	
+                <h1 class="animated rt hit-the-floor">GodLike!</h1>
+                <p>&nbsp;&bull;&nbsp;ǤΞŊᗫᎯ&nbsp;&bull;&nbsp;</p>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="https://vk.com/sheykeroff" target="_blank" class="fa fa-vk"></a>
+                        </li>
+                        <li>
+                            <a href="http://steamcommunity.com/profiles/76561198341473915/" target="_blank" class="fa fa-steam"></a>
+                        </li>
+                    </ul>
+					<audio src="scr/1.mp3" controls="controls" autoplay="autoplay"></audio>
+                    <ul>
+                        <marquee aligt="center" scrollamount="100" width="540" style="width:540px;">◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄</marquee>
+                    </ul>
+                    <p class="danceWord-s10">Favourite Games: Everlasting Summer/CS:GO</p>
+                    <ul>
+                        <marquee aligt="center" scrollamount="100" width="1000" style="width:1000px;">◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄</marquee>
+                   </ul>
+                </nav>
+            </header>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/particles.min.js"></script>
+<script type="text/javascript">
+
+function preventSelection(element){
+  var preventSelection = false;
+
+  function addHandler(element, event, handler){
+    if (element.attachEvent) 
+      element.attachEvent('on' + event, handler);
+    else 
+      if (element.addEventListener) 
+        element.addEventListener(event, handler, false);
+  }
+  function removeSelection(){
+    if (window.getSelection) { window.getSelection().removeAllRanges(); }
+    else if (document.selection && document.selection.clear)
+      document.selection.clear();
+  }
+  function killCtrlA(event){
+    var event = event || window.event;
+    var sender = event.target || event.srcElement;
+
+    if (sender.tagName.match(/INPUT|TEXTAREA/i))
+      return;
+
+    var key = event.keyCode || event.which;
+    if (event.ctrlKey && key == 'A'.charCodeAt(0))  
+    {
+      removeSelection();
+
+      if (event.preventDefault) 
+        event.preventDefault();
+      else
+        event.returnValue = false;
+    }
+  }
+  addHandler(element, 'mousemove', function(){
+    if(preventSelection)
+      removeSelection();
+  });
+  addHandler(element, 'mousedown', function(event){
+    var event = event || window.event;
+    var sender = event.target || event.srcElement;
+    preventSelection = !sender.tagName.match(/INPUT|TEXTAREA/i);
+  });
+  addHandler(element, 'mouseup', function(){
+    if (preventSelection)
+      removeSelection();
+    preventSelection = false;
+  });
+  addHandler(element, 'keydown', killCtrlA);
+  addHandler(element, 'keyup', killCtrlA);
+}
+
+preventSelection(document);
+</script>
+<script type="text/javascript" src="js/actions.js"></script>
+<script type="text/javascript" src="js/spider.js"></script>
+<script type="text/javascript">
+    function clock() {
+        var d = new Date();
+        var hours = d.getHours();
+        var minutes = d.getMinutes();
+        var seconds = d.getSeconds();
+
+
+        if (hours <= 9) hours = "0" + hours;
+        if (minutes <= 9) minutes = "0" + minutes;
+        if (seconds <= 9) seconds = "0" + seconds;
+
+        date_time = hours + ":" + minutes + ":" + seconds;
+        if (document.layers) {
+            document.layers.doc_time.document.write(date_time);
+            document.layers.doc_time.document.close();
+        } else document.getElementById("doc_time").innerHTML = date_time;
+        setTimeout("clock()", 1000);
+    }
+</script>
+<script type="text/javascript">
+    clock();
+</script>
+
+</script>
+<script>
+    document.onkeydown = function(e) {
+        if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) { //Alt+c, Alt+v will also be disabled sadly. 
+        }
+        return false;
+    };
+</script>
+
+<script>
+    function click() {
+        if (event.button == 2 || event.button == 3) {
+            oncontextmenu = 'return false';
+        }
+    }
+    document.onmousedown = click
+    document.oncontextmenu = new Function("return false;")
+</script>
+
+</html>

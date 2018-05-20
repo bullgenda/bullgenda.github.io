@@ -1,0 +1,95 @@
+
+<!DOCTYPE utf-8>
+<html>
+<head>
+<title>Вопросы по сборке</title>
+<meta charset="utf-8">
+<link rel="icon" type="image/ico" href="1.ico" sizes="45x48">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/vp.js"></script>
+<link rel="stylesheet" href="css/st.css">
+    <style>
+      #zatemnenie {
+        background: rgba(102, 102, 102, 0.5);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+      }
+      #okno {
+        width: 300px;
+        height: 50px;
+        text-align: center;
+        padding: 15px;
+        border: 3px solid #0000cc;
+        border-radius: 10px;
+        color: #0000cc;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        background: #fff;
+      }
+      #zatemnenie:target {display: block;}
+      .close {
+        display: inline-block;
+        border: 1px solid #0000cc;
+        color: #0000cc;
+        padding: 0 12px;
+        margin: 10px;
+        text-decoration: none;
+        background: #f2f2f2;
+        font-size: 14pt;
+        cursor:pointer;
+      }
+      .close:hover {background: #e6e6ff;}
+    </style>    
+
+</head>
+
+<body> 
+<div id="zatemnenie">
+      <div id="okno">
+        Пишите: http://steamcommunity.com/id/papanboss/<br>
+        <a href="#" class="close">Закрыть</a>
+      </div>
+    </div>
+     
+    <a href="#zatemnenie">Еще вопросы?</a>
+<style>
+.sp_title2{background:#0086ff;color:#fff;padding:7px 6px;margin-top:4px;-webkit-border-radius:3px;border-radius:3px;cursor:pointer}
+.sp_content2{background:#fff;color:#000;padding:6px 4px 4px 4px;-webkit-border-radius:3px;border-radius:3px;box-shadow:inset 0 0 0 1px #ccc}
+</style>
+
+<div class="sp_title2">Почему у меня не работает осмотр и меню ножей?</div>
+<div class="sp_content2">
+Это из-за того что вы сбросили мой конфиг)Но это не беда...Нужно просто забиндить...Для осмотра в консоли пишем "bind f inspect" а для ножевого меню "bind j knifes"
+</div>
+
+<div class="sp_title2">Почему у меня несколько оружий не покупаються?</div>
+<div class="sp_content2">
+Если это всё-таки случилось то заходим в папку с CS потом в cstrike-addons-amxmodx-configs и в ursers.ini нужно вместо "Genda" написать свой ник.
+</div>
+
+<div class="sp_title2">Почему нету p_ моделей?</div>
+<div class="sp_content2">
+p_ модели отсутствуют потому-что стандартный GoldSource(движок half-life) не может рендрить модели с шейдерами...А именно p_ модели(модели оружий в руках тимейта или врага) это связанно с тем что актуальный пачт 43v слишком стар...А нового официального пачта нету.Есть только пользовательские и то за деньги)
+</div>
+
+<div class="sp_title2">Меню выбора персонажа и motd некорректны?</div>
+<div class="sp_content2">
+Это может быть из-за разришения...Для нормальной работы не меняем разришение оставляем её как есть т.к кастомные меню сделаны именно под стандартные разришение.(Я уже её установил нормально)
+</div>
+
+<div class="sp_title2">Есть еще вопросы?</div>
+<div class="sp_content2">
+Пиши в лс : <a href="http://steamcommunity.com/id/papanboss/">Steam</a>
+</div>
+
+</body>
+
+</html>
